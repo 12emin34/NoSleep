@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "nosleep",
+  "version": "${version}",
+  "name": "NoSleep",
+  "description": "A mod that disables sleep",
+  "authors": [
+    "12emin34"
+  ],
+  "contributors": [
+    "ProZzZz_Gamer"
+  ],
+  "contact": {
+    "repo": "https://github.com/12emin34/NoSleep"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/nosleep/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me._12emin34.nosleep.client.NoSleepClient"
+    ],
+    "main": [
+      "me._12emin34.nosleep.NoSleep"
+    ]
+  },
+  "mixins": [
+    "nosleep.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
